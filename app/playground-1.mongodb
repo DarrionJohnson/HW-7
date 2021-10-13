@@ -52,7 +52,8 @@ db.testBase.insertMany([
 // Ran an empty perameter to test the find perameter.
 db.testBase.find({});
 
-// TODO: Run a Filter query
+// TODO: Run a Filter query; To find only sporting goods.
+db.testBase.find({category: "Sporting Goods"});
 
 
 // TODO: Run an And query
