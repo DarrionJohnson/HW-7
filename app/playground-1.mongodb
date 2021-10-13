@@ -37,6 +37,8 @@
 // db.sales.aggregate(aggregation);
 
 // **************************************************************************
+// Add drop command to clear playground result
+db.testBase.drop();
 
 db.testBase.insertMany([
   {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
