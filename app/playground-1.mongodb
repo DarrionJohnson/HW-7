@@ -39,36 +39,12 @@
 // **************************************************************************
 
 db.testBase.insertMany([
-  {
-    item: 'journal',
-    qty: 25,
-    size: { h: 14, w: 21, uom: 'cm' },
-    status: 'A'
-  },
-  {
-    item: 'notebook',
-    qty: 50,
-    size: { h: 8.5, w: 11, uom: 'in' },
-    status: 'A'
-  },
-  {
-    item: 'paper',
-    qty: 100,
-    size: { h: 8.5, w: 11, uom: 'in' },
-    status: 'D'
-  },
-  {
-    item: 'planner',
-    qty: 75,
-    size: { h: 22.85, w: 30, uom: 'cm' },
-    status: 'D'
-  },
-  {
-    item: 'postcard',
-    qty: 45,
-    size: { h: 10, w: 15.25, uom: 'cm' },
-    status: 'A'
-  }
+  {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
+  {category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball"},
+  {category: "Sporting Goods", price: "$29.99", stocked: false, name: "Basketball"},
+  {category: "Electronics", price: "$99.99", stocked: true, name: "iPod Touch"},
+  {category: "Electronics", price: "$399.99", stocked: false, name: "iPhone 5"},
+  {category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7"}
 ]);
 
 // Ran an empty perameter to test the find perameter.
