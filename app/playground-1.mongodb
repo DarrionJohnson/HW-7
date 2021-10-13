@@ -71,3 +71,5 @@ db.testBase.insertMany([
   }
 ]);
 
+// Ran an empty perameter to test the find perameter.
+db.testBase.find({});
