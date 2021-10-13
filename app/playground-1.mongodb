@@ -73,3 +73,14 @@ db.testBase.insertMany([
 
 // Ran an empty perameter to test the find perameter.
 db.testBase.find({});
+
+// TODO: Run a Filter query
+
+
+// TODO: Run an And query
+
+
+// TODO: Run an Or query
+
+
+// TODO: Run a In query
