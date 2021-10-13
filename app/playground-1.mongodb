@@ -38,7 +38,7 @@
 
 // **************************************************************************
 
-await db.collection('dataBase').insertMany([
+db.testBase.insertMany([
   {
     item: 'journal',
     qty: 25,
@@ -70,3 +70,4 @@ await db.collection('dataBase').insertMany([
     status: 'A'
   }
 ]);
+
