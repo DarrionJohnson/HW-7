@@ -59,7 +59,7 @@ db.testBase.find({category: "Sporting Goods"});
 // TODO: Run an And query; for all In stock Electronics.
 db.testBase.find({category: "Electronics", stocked: true});
 
-// TODO: Run an Or query
-
+// TODO: Run an Or query; for Electronics and Football
+db.testBase.find({$or: [{ category: 'Electronics' }, { name: 'Football' }]});
 
 // TODO: Run a In query
