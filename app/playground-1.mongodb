@@ -37,6 +37,7 @@
 // db.sales.aggregate(aggregation);
 
 // **************************************************************************
+
 // Add drop command to clear playground result
 db.testBase.drop();
 
@@ -52,12 +53,11 @@ db.testBase.insertMany([
 // Ran an empty perameter to test the find perameter.
 db.testBase.find({});
 
-// TODO: Run a Filter query; To find only sporting goods.
+// TODO: Run a Filter query; to find only sporting goods.
 db.testBase.find({category: "Sporting Goods"});
 
-
-// TODO: Run an And query
-
+// TODO: Run an And query; for all In stock Electronics.
+db.testBase.find({category: "Electronics", stocked: true});
 
 // TODO: Run an Or query
 
